@@ -1,0 +1,944 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+    <head>
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet">
+        
+        <!-- title of site -->
+        <title>Veroil-USA</title>
+
+        <!-- For favicon png -->
+		<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
+       
+        <!--font-awesome.min.css-->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+        <!--linear icon css-->
+		<link rel="stylesheet" href="assets/css/linearicons.css">
+
+        <!--flaticon.css-->
+		<link rel="stylesheet" href="assets/css/flaticon.css">
+
+		<!--animate.css-->
+        <link rel="stylesheet" href="assets/css/animate.css">
+
+        <!--owl.carousel.css-->
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+		
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		
+		<!-- bootsnav -->
+
+		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
+        
+        <!--style.css-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        
+        <!--responsive.css-->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		
+        <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+	
+	<body>
+		<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+	
+		<!--welcome-hero start -->
+		<section id="home" class="welcome-hero">
+
+			<!-- top-area Start -->
+			<div class="top-area">
+				<div class="header-area">
+					<!-- Start Navigation -->
+				    <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"  data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+
+				        <div class="container">
+    <!-- Start Header Navigation -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+            <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand" href="index.html">Veroil-USA <span></span></a>
+    </div><!--/.navbar-header-->
+    <!-- End Header Navigation -->
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+  <!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+        <li class="scroll active"><a href="#home">home</a></li>
+        <li class="scroll"><a href="#service">service</a></li>
+        <li class="scroll"><a href="#featured-cars">Premium gasoline cars</a></li>
+        <li class="scroll"><a href="#new-cars">Featured premium cars</a></li>
+        <li class="scroll"><a href="#brand">brands</a></li>
+        <li class="scroll"><a href="#contact">contact</a></li>
+        <!-- Add the logo here beside the contact nav item -->
+        <li><a href="#"><img src="assets/images/verolt1.png" alt="Verolt Logo" style="height: 60px; width: 60px;"></a></li>
+    </ul><!--/.nav -->
+</div><!--/.navbar-collapse -->
+
+    </div><!--/.navbar-collapse -->
+</div><!--/.container -->
+
+				            </div><!-- /.navbar-collapse -->
+				        </div><!--/.container-->
+				    </nav><!--/nav-->
+				    <!-- End Navigation -->
+				</div><!--/.header-area-->
+			    <div class="clearfix"></div>
+
+			</div><!-- /.top-area-->
+			<!-- top-area End -->
+
+			<div class="container">
+				<div class="welcome-hero-txt">
+					<h2>Navigating Tomorrow's Fuel Prices Today</h2>
+					<p>
+						Optimize procurement strategies & stay ahead in the volatile market landscape. Streamline your fuel management with Veroil and unlock new levels of efficiency and cost savings. 
+					</p>
+				</div>
+			</div>
+
+			<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Price Prediction</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="model-search-content">
+				<h1 class="text-center" style="padding: 19px 10px;">Start Predicting!</h1>
+                <div class="row">
+                    <!-- Date Selection -->
+                    <div class="col-md-offset-1 col-md-2 col-sm-12">
+                        <div class="single-model-search">
+                            <h2>Select Date</h2>
+                            <div class="model-select-icon">
+                                <input type="date" id="selectedDate">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fuel Type Selection -->
+                    <div class="col-md-offset-1 col-md-2 col-sm-12">
+                        <div class="single-model-search">
+                            <h2>Select Fuel Type</h2>
+                            <div class="model-select-icon">
+                                <select id="fuelType" class="form-control" onchange="showFuelOptions()">
+                                    <option value="default">Select Fuel Type</option>
+                                    <option value="Diesel">Diesel</option>
+                                    <option value="Gasoline">Gasoline</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fuel Options (displayed based on Fuel Type selection) -->
+                    <div class="col-md-offset-1 col-md-2 col-sm-12" id="fuelOptionsContainer" style="display: none;">
+                        <div class="single-model-search">
+                            <h2>Select Fuel Standard</h2>
+                            <div class="model-select-icon" id="fuelOptions"></div>
+                        </div>
+                    </div>
+                    <!-- Predict Button -->
+                    <div class="col-md-2 col-sm-12">
+                        <div class="single-model-search text-center">
+                            <button class="welcome-btn model-search-btn" onclick="predictFuelPrice()">
+                                Predict
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Result Display -->
+                    <div class="col-md-12 mt-4" id="resultDisplay" style="display: none;">
+                        <div class="alert alert-success" role="alert">
+                            <strong>Predicted Fuel Price:</strong> <span id="predictedPrice"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function showFuelOptions() {
+        const fuelType = document.getElementById('fuelType').value;
+        const fuelOptionsContainer = document.getElementById('fuelOptionsContainer');
+        const fuelOptions = document.getElementById('fuelOptions');
+
+        if (fuelType === 'Gasoline') {
+            fuelOptionsContainer.style.display = 'block';
+            fuelOptions.innerHTML = `
+                <select id="gasolineOptions" class="form-control">
+                    <option value="default">Select Gasoline Type</option>
+                    <option value="Regular">Regular</option>
+                    <option value="Premium">Premium</option>
+                    <option value="Reformulated">Reformulated</option>
+                </select>`;
+        } else {
+            fuelOptionsContainer.style.display = 'none';
+            fuelOptions.innerHTML = '';
+        }
+    }
+
+    function predictFuelPrice() {
+        const selectedDate = document.getElementById('selectedDate').value;
+        const fuelType = document.getElementById('fuelType').value;
+
+        if (!selectedDate || fuelType === 'default') {
+            alert('Please select a valid date and fuel type.');
+            return;
+        }
+
+        let fuelPrice;
+
+        if (fuelType === 'Diesel') {
+            // Generate random number between 2.4 and 4.3 for Diesel
+            fuelPrice = (Math.random() * (4.3 - 2.4) + 2.4).toFixed(2);
+        } else if (fuelType === 'Gasoline') {
+            const gasolineOptions = document.getElementById('gasolineOptions').value;
+
+            if (gasolineOptions === 'default') {
+                alert('Please select a valid gasoline type.');
+                return;
+            }
+
+            // Generate random number based on selected gasoline type
+            switch (gasolineOptions) {
+                case 'Regular':
+                    fuelPrice = (Math.random() * (3.9 - 1.2) + 1.2).toFixed(2);
+                    break;
+                case 'Premium':
+                    fuelPrice = (Math.random() * (4.5 - 1.5) + 1.5).toFixed(2);
+                    break;
+                case 'Reformulated':
+                    fuelPrice = (Math.random() * (3.8 - 1.15) + 1.15).toFixed(2);
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        // Display predicted fuel price in result section
+        const resultDisplay = document.getElementById('resultDisplay');
+        const predictedPrice = document.getElementById('predictedPrice');
+
+        predictedPrice.textContent = `$${fuelPrice} per gallon`;
+        resultDisplay.style.display = 'block';
+
+        // Reset form after displaying result
+        document.getElementById('selectedDate').value = '';
+        document.getElementById('fuelType').value = 'default';
+        document.getElementById('fuelOptionsContainer').style.display = 'none';
+        document.getElementById('fuelOptions').innerHTML = '';
+    }
+</script>
+
+</body>
+</html>
+		</section><!--/.welcome-hero-->
+		<!--welcome-hero end -->
+
+		<!--service start -->
+		<section id="service" class="service">
+			<div class="container">
+				<div class="service-content">
+					<div class="row">
+						<div class="col-md-4 col-sm-6">
+							<div class="single-service-item">
+								<div class="single-service-icon">
+									<i class="flaticon-car"></i>
+								</div>
+								<h2><a href="#"> Gasoline <span> variants  </span>prediction</a></h2>
+								<p>
+									Predict variations of fuel like Regular, Midgrade & Premium.
+								</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-service-item">
+								<div class="single-service-icon">
+									<i class="flaticon-car-repair"></i>
+								</div>
+								<h2><a href="#">Diesel price prediction</a></h2>
+								<p>
+									Predict price of diesel along with gasoline.  
+								</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-service-item">
+								<div class="single-service-icon">
+									<i class="flaticon-car-1"></i>
+								</div>
+								<h2><a href="#">Future price predictions</a></h2>
+								<p>
+									Forecast and stay ahead with the future prices. 
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!--/.container-->
+
+		</section><!--/.service-->
+		<!--service end-->
+
+		<!--new-cars start -->
+		<section id="new-cars" class="new-cars">
+			<div class="container">
+				<div class="section-header">
+					<p>checkout <span>the</span> latest</p>
+					<h2>premium consumer cars</h2>
+				</div><!--/.section-header-->
+				<div class="new-cars-content">
+					<div class="owl-carousel owl-theme" id="new-cars-carousel">
+						<div class="new-cars-item">
+							<div class="single-new-cars-item">
+								<div class="row">
+									<div class="col-md-7 col-sm-12">
+										<div class="new-cars-img">
+											<img src="assets/images/new-cars-model/ncm1.png" alt="img"/>
+										</div><!--/.new-cars-img-->
+									</div>
+									<div class="col-md-5 col-sm-12">
+										<div class="new-cars-txt">
+											<h2><a href="#">Koenigsegg Agera<span> </span></a></h2>
+											<p>
+												The Koenigsegg Agera, equipped with a powerful 5.0-liter twin-turbocharged V8 engine, achieves a fuel consumption rate of approximately 15 miles per gallon (mpg) in city driving and around 22 mpg on the highway with premium gasoline. This remarkable balance of performance and efficiency showcases Koenigsegg's advanced engineering prowess, delivering exhilarating speed without compromising fuel economy. 
+											</p>
+											<p class="new-cars-para2">
+												
+The Koenigsegg Agera is an extraordinary hypercar renowned for its unmatched performance, cutting-edge technology, and exquisite craftsmanship. 
+											</p>
+										</div><!--/.new-cars-txt-->	
+									</div><!--/.col-->
+								</div><!--/.row-->
+							</div><!--/.single-new-cars-item-->
+						</div><!--/.new-cars-item-->
+						<div class="new-cars-item">
+							<div class="single-new-cars-item">
+								<div class="row">
+									<div class="col-md-7 col-sm-12">
+										<div class="new-cars-img">
+											<img src="assets/images/new-cars-model/ncm2.png" alt="img"/>
+										</div><!--/.new-cars-img-->
+									</div>
+									<div class="col-md-5 col-sm-12">
+										<div class="new-cars-txt">
+											<h2><a href="#">Mclaren 720S</a></h2>
+											<p>
+												The McLaren 720S, powered by a 4.0-liter twin-turbocharged V8 engine, achieves a fuel consumption rate of approximately 15 miles per gallon (mpg) in city driving and around 22 mpg on the highway when using premium gasoline. Despite its high-performance capabilities, the 720S features advanced engineering that optimizes fuel efficiency without compromising on speed or agility. 
+											</p>
+
+											<p class="new-cars-para2">
+												
+The McLaren 720S is a high-performance supercar known for its stunning design, blistering acceleration, and exceptional handling prowess. 
+											</p>
+										</div><!--/.new-cars-txt-->	
+									</div><!--/.col-->
+								</div><!--/.row-->	
+							</div><!--/.single-new-cars-item-->
+						</div><!--/.new-cars-item-->
+						<div class="new-cars-item">
+							<div class="single-new-cars-item">
+								<div class="row">
+									<div class="col-md-7 col-sm-12">
+										<div class="new-cars-img">
+											<img src="assets/images/new-cars-model/ncm3.png" alt="img"/>
+										</div><!--/.new-cars-img-->
+									</div>
+									<div class="col-md-5 col-sm-12">
+										<div class="new-cars-txt">
+											<h2><a href="#">Ferrari LaFerrari</a></h2>
+											<p>
+												The Ferrari LaFerrari, propelled by a potent hybrid powertrain combining a V12 engine with electric motors, achieves a fuel consumption rate of approximately 12 miles per gallon (mpg) in city driving and around 15 mpg on the highway with premium gasoline. This exceptional blend of performance and efficiency reflects Ferrari's mastery of engineering, delivering extraordinary speed and eco-friendly technology. 
+											</p>
+											<p class="new-cars-para2">
+												
+The Ferrari LaFerrari is an iconic hybrid hypercar celebrated for its breathtaking performance, cutting-edge technology, and striking design. 
+											</p>
+										</div><!--/.new-cars-txt-->	
+									</div><!--/.col-->
+								</div><!--/.row-->
+							</div><!--/.single-new-cars-item-->
+						</div><!--/.new-cars-item-->
+					</div><!--/#new-cars-carousel-->
+				</div><!--/.new-cars-content-->
+			</div><!--/.container-->
+
+		</section><!--/.new-cars-->
+		<!--new-cars end -->
+
+		<!--featured-cars start -->
+		<section id="featured-cars" class="featured-cars">
+			<div class="container">
+				<div class="section-header">
+					<p>checkout <span>some</span> Premium gasoline Consumers</p>
+					<h2>Premium gasoline Cars</h2>
+				</div><!--/.section-header-->
+				<div class="featured-cars-content">
+					<div class="row">
+						<div class="col-lg-3 col-md-4 col-sm-6">
+							<div class="single-featured-cars">
+								<div class="featured-img-box">
+									<div class="featured-cars-img">
+										<img src="assets/images/featured-cars/fc1.png" alt="cars">
+									</div>
+									<div class="featured-model-info">
+										<p>
+											model: 2017
+											<span class="featured-mi-span"></span> 
+											<span class="featured-hp-span"> 1500 HP</span>
+											
+										</p>
+									</div>
+								</div>
+								<div class="featured-cars-txt">
+									<h2><a href="#">Bugatti Chiron</a></h2>
+									<h3>Premium conventional Gasoline</h3>
+									<p>
+										Powered by an 8.0-liter quad-turbocharged W16 engine producing around 1,500 horsepower, the Chiron can accelerate from 0 to 60 mph in under 2.5 seconds and reach a top speed exceeding 260 mph (420 km/h)
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6">
+							<div class="single-featured-cars">
+								<div class="featured-img-box">
+									<div class="featured-cars-img">
+										<img src="assets/images/featured-cars/fc2.png" alt="cars">
+									</div>
+									<div class="featured-model-info">
+										<p>
+											model: 2017
+											<span class="featured-mi-span"> </span> 
+											<span class="featured-hp-span"> 455 HP</span>
+											 
+										</p>
+									</div>
+								</div>
+								<div class="featured-cars-txt">
+									<h2><a href="#">chevrolet camaro SS <span> 	</span></a></h2>
+									<h3>Premium conventional Gasoline</h3>
+									<p>
+										Equipped with a robust 6.2-liter V8 engine generating approximately 455 horsepower, the Camaro SS boasts impressive acceleration, launching from 0 to 60 mph in under 4 seconds. Its top speed exceeds 160 mph (257 km/h)
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6">
+							<div class="single-featured-cars">
+								<div class="featured-img-box">
+									<div class="featured-cars-img">
+										<img src="C:/Users/Aditya Upadhyay/Desktop/ARIMA_Predictor/assets/images/featured-cars/fc3.png" alt="cars">
+									</div>
+									<div class="featured-model-info">
+										<p>
+											model: 2019s
+											<span class="featured-mi-span"> </span> 
+											<span class="featured-hp-span"> 770 HP</span>
+											
+										</p>
+									</div>
+								</div>
+								<div class="featured-cars-txt">
+									<h2><a href="#">Lamborghini Aventador<span>SVJ</span></a></h2>
+									<h3>Premium conventional Gasoline</h3>
+									<p>
+										Powered by a formidable 6.5-liter naturally aspirated V12 engine producing around 770 horsepower, the Lamborghini Aventador SVJ accelerates from 0 to 60 mph in approximately 2.8 seconds.top speed exceeding 217 mph
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6">
+							<div class="single-featured-cars">
+								<div class="featured-img-box">
+									<div class="featured-cars-img">
+										<img src="assets/images/featured-cars/fc4.png" alt="cars">
+									</div>
+									<div class="featured-model-info">
+										<p>
+											model: 2016
+											<span class="featured-mi-span"></span> 
+											<span class="featured-hp-span"> 660 HP</span>
+											
+										</p>
+									</div>
+								</div>
+								<div class="featured-cars-txt">
+									<h2><a href="#">Ferrari<span> 488</span>  GTB capristo </a></h2>
+									<h3>Premium conventional Gasoline</h3>
+									<p>
+										Fitted with a potent 3.9-liter twin-turbocharged V8 engine producing over 660 horsepower, the Ferrari 488 GTB Capristo accelerates from 0 to 60 mph in under 3 seconds. With a top speed surpassing 200 mph (322 km/h) 
+									</p>
+								</div>
+							</div>
+						</div> 
+					</div>
+			</div><!--/.container-->
+		<div class="new-cars-content">
+			<div class="owl-carousel owl-theme" id="new-cars-carousel">
+				<div class="new-cars-item">
+					<div class="single-new-cars-item">
+						<div class="row">
+							<div class="col-md-7 col-sm-12">
+								<div class="new-cars-img">
+									<img src="assets/images/new-cars-model/ncm1.png" alt="img"/>
+								</div><!--/.new-cars-img-->
+							</div>
+							<div class="col-md-5 col-sm-12">
+								<div class="new-cars-txt">
+									<h2><a href="#">Koenigsegg Agera<span> </span></a></h2>
+									<p>
+										The Koenigsegg Agera, equipped with a powerful 5.0-liter twin-turbocharged V8 engine, achieves a fuel consumption rate of approximately 15 miles per gallon (mpg) in city driving and around 22 mpg on the highway with premium gasoline. This remarkable balance of performance and efficiency showcases Koenigsegg's advanced engineering prowess, delivering exhilarating speed without compromising fuel economy. 
+									</p>
+									<p class="new-cars-para2">
+										
+The Koenigsegg Agera is an extraordinary hypercar renowned for its unmatched performance, cutting-edge technology, and exquisite craftsmanship. 
+									</p>
+								</div><!--/.new-cars-txt-->	
+							</div><!--/.col-->
+						</div><!--/.row-->
+					</div><!--/.single-new-cars-item-->
+				</div><!--/.new-cars-item-->
+				<div class="new-cars-item">
+					<div class="single-new-cars-item">
+						<div class="row">
+							<div class="col-md-7 col-sm-12">
+								<div class="new-cars-img">
+									<img src="assets/images/new-cars-model/ncm2.png" alt="img"/>
+								</div><!--/.new-cars-img-->
+							</div>
+							<div class="col-md-5 col-sm-12">
+								<div class="new-cars-txt">
+									<h2><a href="#">Mclaren 720S</a></h2>
+									<p>
+										The McLaren 720S, powered by a 4.0-liter twin-turbocharged V8 engine, achieves a fuel consumption rate of approximately 15 miles per gallon (mpg) in city driving and around 22 mpg on the highway when using premium gasoline. Despite its high-performance capabilities, the 720S features advanced engineering that optimizes fuel efficiency without compromising on speed or agility. 
+									</p>
+
+									<p class="new-cars-para2">
+										
+The McLaren 720S is a high-performance supercar known for its stunning design, blistering acceleration, and exceptional handling prowess. 
+									</p>
+								</div><!--/.new-cars-txt-->	
+							</div><!--/.col-->
+						</div><!--/.row-->	
+					</div><!--/.single-new-cars-item-->
+				</div><!--/.new-cars-item-->
+				<div class="new-cars-item">
+					<div class="single-new-cars-item">
+						<div class="row">
+							<div class="col-md-7 col-sm-12">
+								<div class="new-cars-img">
+									<img src="assets/images/new-cars-model/ncm3.png" alt="img"/>
+								</div><!--/.new-cars-img-->
+							</div>
+							<div class="col-md-5 col-sm-12">
+								<div class="new-cars-txt">
+									<h2><a href="#">Ferrari LaFerrari</a></h2>
+									<p>
+										The Ferrari LaFerrari, propelled by a potent hybrid powertrain combining a V12 engine with electric motors, achieves a fuel consumption rate of approximately 12 miles per gallon (mpg) in city driving and around 15 mpg on the highway with premium gasoline. This exceptional blend of performance and efficiency reflects Ferrari's mastery of engineering, delivering extraordinary speed and eco-friendly technology. 
+									</p>
+									<p class="new-cars-para2">
+										
+The Ferrari LaFerrari is an iconic hybrid hypercar celebrated for its breathtaking performance, cutting-edge technology, and striking design. 
+									</p>
+								</div><!--/.new-cars-txt-->	
+							</div><!--/.col-->
+						</div><!--/.row-->
+					</div><!--/.single-new-cars-item-->
+				</div><!--/.new-cars-item-->
+			</div><!--/#new-cars-carousel-->
+		</div><!--/.new-cars-content-->
+	</div><!--/.container-->
+
+</section><!--/.new-cars-->
+<!--new-cars end -->
+
+<!--featured-cars start -->
+<section id="featured-cars" class="featured-cars">
+	<div class="container">
+		<div class="section-header">
+			<p>checkout <span>some</span> Reformulated gasoline Consumers</p>
+			<h2>eco-friendly Cars</h2>
+		</div><!--/.section-header-->
+		<div class="featured-cars-content">
+			<div class="row">
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="single-featured-cars">
+						<div class="featured-img-box">
+							<div class="featured-cars-img">
+								<img src="assets/images/featured-cars/fc5.png" alt="cars">
+							</div>
+							<div class="featured-model-info">
+								<p>
+									model: 2017
+									<span class="featured-mi-span"></span> 
+									<span class="featured-hp-span"> 1500 HP</span>
+									
+								</p>
+							</div>
+						</div>
+						<div class="featured-cars-txt">
+							<h2><a href="#">Honda Civic</a></h2>
+							<h3>Reformulated Gasoline</h3>
+							<p>
+								Powered by an 8.0-liter quad-turbocharged W16 engine producing around 1,500 horsepower, the Chiron can accelerate from 0 to 60 mph in under 2.5 seconds and reach a top speed exceeding 260 mph (420 km/h)
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="single-featured-cars">
+						<div class="featured-img-box">
+							<div class="featured-cars-img">
+								<img src="assets/images/featured-cars/fc6.png" alt="cars">
+							</div>
+							<div class="featured-model-info">
+								<p>
+									model: 2017
+									<span class="featured-mi-span"> </span> 
+									<span class="featured-hp-span"> 455 HP</span>
+									 
+								</p>
+							</div>
+						</div>
+						<div class="featured-cars-txt">
+							<h2><a href="#">Chevrolet Volt<span> 	</span></a></h2>
+							<h3>Reformulated Gasoline</h3>
+							<p>
+								Equipped with a robust 6.2-liter V8 engine generating approximately 455 horsepower, the Camaro SS boasts impressive acceleration, launching from 0 to 60 mph in under 4 seconds. Its top speed exceeds 160 mph (257 km/h)
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="single-featured-cars">
+						<div class="featured-img-box">
+							<div class="featured-cars-img">
+								<img src="C:/Users/Aditya Upadhyay/Desktop/ARIMA_Predictor/assets/images/featured-cars/fc7.png" alt="cars">
+							</div>
+							<div class="featured-model-info">
+								<p>
+									model: 2019s
+									<span class="featured-mi-span"> </span> 
+									<span class="featured-hp-span"> 770 HP</span>
+									
+								</p>
+							</div>
+						</div>
+						<div class="featured-cars-txt">
+							<h2><a href="#">Toyota Camry<span></span></a></h2>
+							<h3>Reformulated Gasoline</h3>
+							<p>
+								Powered by a formidable 6.5-liter naturally aspirated V12 engine producing around 770 horsepower, the Lamborghini Aventador SVJ accelerates from 0 to 60 mph in approximately 2.8 seconds.top speed exceeding 217 mph
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6">
+					<div class="single-featured-cars">
+						<div class="featured-img-box">
+							<div class="featured-cars-img">
+								<img src="assets/images/featured-cars/fc8.png" alt="cars">
+							</div>
+							<div class="featured-model-info">
+								<p>
+									model: 2016
+									<span class="featured-mi-span"></span> 
+									<span class="featured-hp-span"> 660 HP</span>
+									
+								</p>
+							</div>
+						</div>
+						<div class="featured-cars-txt">
+							<h2><a href="#">Subaru Outback<span></span></a></h2>
+							<h3>Reformulated Gasoline</h3>
+							<p>
+								Fitted with a potent 3.9-liter twin-turbocharged V8 engine producing over 660 horsepower, the Ferrari 488 GTB Capristo accelerates from 0 to 60 mph in under 3 seconds. With a top speed surpassing 200 mph (322 km/h) 
+							</p>
+						</div>
+					</div>
+				</div> 
+			</div>
+	</div><!--/.container-->
+
+		</section><!--/.featured-cars-->
+		<!--featured-cars end -->
+
+		<!-- clients-say strat -->
+		<section id="clients-say"  class="clients-say">
+			<div class="container">
+				<div class="section-header">
+					<h2>what our clients say</h2>
+				</div><!--/.section-header-->
+				<div class="row">
+					<div class="owl-carousel testimonial-carousel">
+						<div class="col-sm-3 col-xs-12">
+							<div class="single-testimonial-box">
+								<div class="testimonial-description">
+									<div class="testimonial-info">
+										<div class="testimonial-img">
+											<img src="assets/images/clients/c1.jpg" alt="image of clients person" />
+										</div><!--/.testimonial-img-->
+									</div><!--/.testimonial-info-->
+									<div class="testimonial-comment">
+										<p>
+											"Wow! Veroil has been a game-changer for my business. Its accurate predictions have helped me stay ahead of fuel price fluctuations, saving both time and money. Highly recommend to anyone in the fuel industry looking to optimize their operations!" 
+										</p>
+									</div><!--/.testimonial-comment-->
+									<div class="testimonial-person">
+										<h2><a href="#">Harshad Depolkar</a></h2>
+										<h4>White House (Washington D.C.)</h4>
+									</div><!--/.testimonial-person-->
+								</div><!--/.testimonial-description-->
+							</div><!--/.single-testimonial-box-->
+						</div><!--/.col-->
+						<div class="col-sm-3 col-xs-12">
+							<div class="single-testimonial-box">
+								<div class="testimonial-description">
+									<div class="testimonial-info">
+										<div class="testimonial-img">
+											<img src="assets/images/clients/c2.jpg" alt="image of clients person" />
+										</div><!--/.testimonial-img-->
+									</div><!--/.testimonial-info-->
+									<div class="testimonial-comment">
+										<p>
+											"Absolutely blown away by Veroil! It's revolutionized how I manage fuel costs for my business. With its spot-on forecasts, I'm always steps ahead of market shifts, resulting in significant time and cost savings. A must-have tool for anyone in the fuel industry seeking efficiency!" 
+										</p>
+									</div><!--/.testimonial-comment-->
+									<div class="testimonial-person">
+										<h2><a href="#">Iksha Dubey</a></h2>
+										<h4>Disney World (Orlando, Florida)</h4>
+									</div><!--/.testimonial-person-->
+								</div><!--/.testimonial-description-->
+							</div><!--/.single-testimonial-box-->
+						</div><!--/.col-->
+						<div class="col-sm-3 col-xs-12">
+							<div class="single-testimonial-box">
+								<div class="testimonial-description">
+									<div class="testimonial-info">
+										<div class="testimonial-img">
+											<img src="assets/images/clients/c3.jpg" alt="image of clients person" />
+										</div><!--/.testimonial-img-->
+									</div><!--/.testimonial-info-->
+									<div class="testimonial-comment">
+										<p>
+											"Veroil is a total game-changer! Managing fuel expenses has never been easier. Thanks to its precise predictions, I'm consistently ahead of the curve, saving valuable resources and time. For anyone serious about optimizing their fuel operations, Veroil is a must-have companion!" 
+										</p>
+									</div><!--/.testimonial-comment-->
+									<div class="testimonial-person">
+										<h2><a href="#">Sakshi Singh</a></h2>
+										<h4>Times Square (New York City)</h4>
+									</div><!--/.testimonial-person-->
+								</div><!--/.testimonial-description-->
+							</div><!--/.single-testimonial-box-->
+						</div><!--/.col-->
+					</div><!--/.testimonial-carousel-->
+				</div><!--/.row-->
+			</div><!--/.container-->
+
+		</section><!--/.clients-say-->	
+		<!-- clients-say end -->
+
+		<!--brand strat -->
+		<section id="brand"  class="brand">
+			<div class="container">
+				<div class="brand-area">
+					<div class="owl-carousel owl-theme brand-item">
+						<div class="item">
+							<a href="#">
+								<img src="assets/images/brand/br1.png" alt="brand-image" />
+							</a>
+						</div><!--/.item-->
+						<div class="item">
+							<a href="#">
+								<img src="assets/images/brand/br2.png" alt="brand-image" />
+							</a>
+						</div><!--/.item-->
+						<div class="item">
+							<a href="#">
+								<img src="assets/images/brand/br3.png" alt="brand-image" />
+							</a>
+						</div><!--/.item-->
+						<div class="item">
+							<a href="#">
+								<img src="assets/images/brand/br4.png" alt="brand-image" />
+							</a>
+						</div><!--/.item-->
+
+						<div class="item">
+							<a href="#">
+								<img src="assets/images/brand/br5.png" alt="brand-image" />
+							</a>
+						</div><!--/.item-->
+
+						<div class="item">
+							<a href="#">
+								<img src="assets/images/brand/br6.png" alt="brand-image" />
+							</a>
+						</div><!--/.item-->
+					</div><!--/.owl-carousel-->
+				</div><!--/.clients-area-->
+
+			</div><!--/.container-->
+
+		</section><!--/brand-->	
+		<!--brand end -->
+
+		<!--blog start -->
+		<section id="blog" class="blog"></section><!--/.blog-->
+		<!--blog end -->
+
+		<!--contact start-->
+		<footer id="contact"  class="contact">
+			<div class="container">
+				<div class="footer-top">
+					<div class="row">
+						<div class="col-md-3 col-sm-6">
+							<div class="single-footer-widget">
+								<div class="footer-logo">
+									<a href="index.html">Veroil-USA</a>
+								</div>
+								<p>
+									"Please note that the predictions provided are based on historical data and statistical models. Actual outcomes may vary due to changing market conditions and other unforeseen factors. To enhance prediction accuracy, we continuously incorporate additional external features and refine our models. Your understanding and patience are appreciated as we strive to improve the precision of our forecasts."
+								</p>
+								<div class="footer-contact">
+									<p>veroilusa.com</p>
+									<p>+1 00000 0000</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-6">
+							<div class="single-footer-widget">
+								<h2>about us</h2>
+								<ul>		
+									<li><a href="#">career</a></li>
+									<li><a href="#">terms <span> of service</span></a></li>
+									<li><a href="#">privacy policy</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-3 col-xs-12">
+							<div class="single-footer-widget">
+								<h2>Our clients</h2>
+								<div class="row">
+									<div class="col-md-7 col-xs-6">
+										<ul>
+											<li><a href="#">Bugatti</a></li>
+											<li><a href="#">Lamborghini</a></li>
+											<li><a href="#">Honda</a></li>
+											<li><a href="#">Chevrolet</a></li>
+										</ul>
+									</div>
+									<div class="col-md-5 col-xs-6">
+										<ul>
+											<li><a href="#">Koenigsegg</a></li>
+											<li><a href="#">Ferrari</a></li>
+											<li><a href="#">Toyota</a></li>
+											<li><a href="#">Subaru</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-offset-1 col-md-3 col-sm-6">
+							<div class="single-footer-widget">
+								<h2>Get Updates</h2>
+								<div class="footer-newsletter">
+									<p>
+										Drop your mail to receive the latest updates and add-ons.
+									</p>
+								</div>
+								<div class="hm-foot-email">
+									<div class="foot-email-box">
+										<input type="text" class="form-control" placeholder="Enter Mail ID">
+									</div><!--/.foot-email-box-->
+									<div class="foot-email-subscribe">
+										<span><i class="fa fa-arrow-right"></i></span>
+									</div><!--/.foot-email-icon-->
+								</div><!--/.hm-foot-email-->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-copyright">
+					<div class="row">
+						<div class="col-sm-6">
+							<p>
+								&copy; copyright <a href="https://www.Veroil-USA.com/">Verolt</a>.
+							</p><!--/p-->
+						</div>
+						<div class="col-sm-6">
+							<div class="footer-social">
+								<a href="#"><i class="fa fa-facebook"></i></a>	
+								<a href="#"><i class="fa fa-instagram"></i></a>
+								<a href="#"><i class="fa fa-linkedin"></i></a>
+								<a href="#"><i class="fa fa-pinterest-p"></i></a>
+								<a href="#"><i class="fa fa-behance"></i></a>	
+							</div>
+						</div>
+					</div>
+				</div><!--/.footer-copyright-->
+			</div><!--/.container-->
+
+			<div id="scroll-Top">
+				<div class="return-to-top">
+					<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+				</div>
+				
+			</div><!--/.scroll-Top-->
+			
+        </footer><!--/.contact-->
+		<!--contact end-->
+
+
+		
+		<!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+		<script src="assets/js/jquery.js"></script>
+        
+        <!--modernizr.min.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		<!--bootstrap.min.js-->
+        <script src="assets/js/bootstrap.min.js"></script>
+		
+		<!-- bootsnav js -->
+		<script src="assets/js/bootsnav.js"></script>
+
+		<!--owl.carousel.js-->
+        <script src="assets/js/owl.carousel.min.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+        <!--Custom JS-->
+        <script src="assets/js/custom.js"></script>
+        
+    </body>
+	
+</html>

@@ -1,0 +1,56 @@
+import pickle 
+from flask import Flask, request, jsonify
+from statsmodels.tsa.arima.model import ARIMA
+from flask_cors import CORS
+
+app = Flask(__name__)
+CORS(app)
+
+# Function to load saved models
+def load_models(filename):
+    with open(filename, 'rb') as file:
+        models = pickle.load(file)
+    return models
+
+# Load the saved models
+formulations_models = load_models('formulations_models.pkl')
+conventional_models = load_models('conventional_models.pkl')
+reformulated_models = load_models('reformulated_models.pkl')
+diesel_model = load_models('diesel_model.pkl')
+
+@app.route('/predict_api', methods=['POST'])
+def predict():
+    data = request.get_json()  # Get JSON input from POST request
+    date = data['date']  # Extract 'date' from JSON input
+    category = data['category']  # Extract 'category' from JSON input
+
+    # Determine which model to use based on category
+    if category in formulations_models:
+        model = formulations_models[category]
+    elif category in conventional_models:
+        model = conventional_models[category]
+    elif category in reformulated_models:
+        model = reformulated_models[category]
+    elif category == 'D1':
+        model = diesel_model
+    else:
+        return jsonify({'error': f"Invalid category '{category}'"}), 400
+
+    # Perform prediction for the specified date
+    try:
+        # Convert 'date' string to datetime if needed
+        # For example: date = pd.to_datetime(date)
+        # Perform forecast for one step ahead
+        forecast_value = model.forecast(steps=1)[0]
+        return jsonify({'predicted_value': float(forecast_value)}), 200
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+# Handle GET requests to '/predict_api' with a response indicating POST method is required
+@app.route('/predict_api', methods=['GET'])
+def predict_get():
+    return jsonify({'message': "Please use a POST request to '/predict_api' for predictions"}), 405
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
